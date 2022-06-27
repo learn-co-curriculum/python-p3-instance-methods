@@ -2,8 +2,9 @@
 
 ## Learning Goals
 
-- Build robust and dynamic Python objects.
-- Accomplish complex programming tasks using knowledge from previous modules.
+- Describe an instance method.
+- Call instance methods on an object.
+- Build instance methods for an object.
 
 ## Key Vocab
 
