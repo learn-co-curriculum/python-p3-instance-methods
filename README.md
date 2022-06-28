@@ -73,25 +73,28 @@ class Dog:
 fido = Dog()
 # <__main__.Dog object at 0x1027f07f0>
 
-fido.__class__
-# <class '__main__.Dog'>
+fido.__dir__()
+# ['__module__', '__dict__', '__weakref__', '__doc__', '__repr__', '__hash__',
+# '__str__', '__getattribute__', '__setattr__', '__delattr__', '__lt__',
+# '__le__', '__eq__', '__ne__', '__gt__', '__ge__', '__init__', '__new__',
+# '__reduce_ex__', '__reduce__', '__subclasshook__', '__init_subclass__',
+# '__format__', '__sizeof__', '__dir__', '__class__']
 ```
 
-When we send an object a message through dot notation, we are calling the
+When we interact with an object through dot notation, we are calling the
 variable or function that is defined inside of the object. We call these
 instance variables **attributes** and these instance functions **methods**.
 Unless otherwise specified, all of an object's methods are considered
 **instance methods**. **Instance methods** can access and modify the
 attributes of an instance.
 
-In the example above, we access the `fido` instance's `__class__` attribute by
-separating the receiving object, `fido` and the attribute, `__class__` by a dot
+In the example above, we access the `fido` instance's `__dir__()` method by
+separating the object, `fido` and the method, `__dir__()` by a dot
 (`.`).
 
-The `__class__` attribute simply tells you the object's class. While this is
-obvious in the above code, you will sometimes be working with objects that are
-returned by someone else's code- this attribute will let you know what you're
-working with.
+The `__dir__()` method provides you with a list of the object's methods and
+attributes. You'll notice that even though we didn't provide the `Dog` class
+with any attributes or methods, it has many by default!
 
 > I thought of objects being like biological cells and/or individual computers
 > on a network, only able to communicate with messages. - Alan Kay
