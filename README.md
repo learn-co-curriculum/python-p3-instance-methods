@@ -108,9 +108,9 @@ place this function definition within the body of a class, that function
 becomes a specific behavior of instances of that class, not a generic procedure
 we can just call whenever we want.
 
-Let's create our `Dog` class in `lib/dog.py`. It's a convention among Rubyists
-to define each class in its own file, using the class name to determine the file
-name.
+Let's create our `Dog` class in `lib/dog.py`. It's a convention among Python
+developers to define each class in its own file, using the class name to
+determine the file name.
 
 In the `Dog` class, let's define our `bark()` instance method:
 
@@ -151,7 +151,7 @@ should see "Woof!" written out.
 
 By defining `bark()` within the `Dog` class, `bark` becomes a method of all
 instances of Dogs. Let's create a second instance of `Dog`, `snoopy`, and verify
-that snoopy also knows how to bark by running `ruby lib/dog.py` again.
+that snoopy also knows how to bark by running `python lib/dog.py` again.
 
 ```py
 class Dog:
