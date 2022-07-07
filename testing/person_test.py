@@ -23,13 +23,13 @@ class TestTalk:
         assert(type(guido.talk) == types.MethodType)
 
     def test_prints_hello_world(self):
-        '''prints "Hello world!"'''
+        '''prints "Hello World!"'''
         guido = Person()
         captured_out = io.StringIO()
         sys.stdout = captured_out
         guido.talk()
         sys.stdout = sys.__stdout__
-        assert(captured_out.getvalue() == "Hello world!\n")
+        assert(captured_out.getvalue() == "Hello World!\n")
 
 class TestWalk:
     '''Person.walk() in walk.py'''
