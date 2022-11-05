@@ -6,11 +6,11 @@ import io
 import sys
 import types
 
-class TestDog:
+class TestPerson:
     '''Person in person.py'''
 
     def test_is_class(self):
-        '''is a class with the name "Dog"'''
+        '''is a class with the name "Person"'''
         guido = Person()
         assert(type(guido) == Person)
 
