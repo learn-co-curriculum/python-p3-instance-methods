@@ -6,7 +6,7 @@
 - Call instance methods on an object.
 - Build instance methods for an object.
 
----
+***
 
 ## Key Vocab
 
@@ -22,7 +22,7 @@
 - **Method**: a function that is defined inside of a class.
 - **Attribute**: variables that belong to an object.
 
----
+***
 
 ## Introduction
 
@@ -41,7 +41,7 @@ fido = Dog()
 But what can this instance of a dog stored in the local variable `fido` do? In
 fact, how do we even ask this object to do something?
 
----
+***
 
 ## The Behavior of Objects
 
@@ -200,7 +200,7 @@ bark()
 # NameError: name 'bark' is not defined
 ```
 
----
+***
 
 ## Instructions
 
@@ -214,6 +214,8 @@ Complete the following tasks to get the rest of the tests passing:
 4. Add an instance method `walk()` to your Person class that will print "The
    person is walking."
 
+***
+
 ## Conclusion
 
 With all tests passing, you have successfully written multiple instance methods
@@ -224,7 +226,7 @@ makes Python classes behave not just as factories, capable of instantiating new
 individual instances, but also as a blueprint, defining what those instances can
 do.
 
----
+***
 
 ## Resources
 
