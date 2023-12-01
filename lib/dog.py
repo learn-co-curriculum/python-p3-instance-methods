@@ -2,9 +2,12 @@
 
 class Dog:
     def bark (self):
-        print('woof')
+        print('Woof!')
+    def sit (self):
+        print('The dog is sitting.')    
 
 
-d = Dog()
-d.bark()
+fido = Dog()
+fido.bark()
+fido.sit()
 
